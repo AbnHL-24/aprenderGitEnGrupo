@@ -1,5 +1,6 @@
 package menu;
 
+import operacion.*;
 import java.util.Scanner;
 
 /**
@@ -22,7 +23,8 @@ public class MenuInicial {
         operacion = leerEntrada();
 
         if (operacion == 1) {
-            //suma
+            Suma suma = new Suma();
+            suma.iniciarOperacion();
         } else if (operacion == 2) {
             //resta
         } else if (operacion == 3) {
