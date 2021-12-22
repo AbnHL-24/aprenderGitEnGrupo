@@ -15,11 +15,27 @@ public class MenuInicial {
     public void iniciarMenu() {
         double operacion;
 
-        do {
         System.out.println("Bienbenido a KalcTerminal");
+        do {
         System.out.println("Por favor ingresa el numero de la operacion que deseas realizar:");
         System.out.println("1. Suma\n2. Resta\n3. Multiplicación\n4. Division\n5. Potenciación\n6. Salir");
         operacion = leerEntrada();
+
+        if (operacion == 1) {
+            //suma
+        } else if (operacion == 2) {
+            //resta
+        } else if (operacion == 3) {
+            //multiplicacion
+        } else if (operacion == 4) {
+            //division
+        } else if ( operacion == 5) {
+            //Potenciacion.realizarPotenciacion();
+        } else if (operacion != (1 | 2 | 3 |4 |5 | 6)) {
+            System.out.println("Ingrese una opcion correcta.");
+        } else {
+            System.out.println("Adios.\n");
+        }
         } while (operacion != 6);
 
     }
